@@ -49,9 +49,16 @@
     <section>
       <h2>Cat Form</h2>
       <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <!-- Se agrego el atributo "value" a los inputs, con esto, los datos del formulario se enviaran conrrectamente-->
-        <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor </label>
-        <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor </label>
+        <!-- Con el elemento "fieldset" agrupamos los input y label en un formulario web, este elemento es de "bloque", asi que salta a la siguiente linea o renglon -->
+        <fieldset>
+          <label>
+            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+          </label>
+          <label>
+            <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">  Outdoor
+          </label>
+      </fieldset>
+
       <input type="text" name="catphotourl" placeholder="cat photo URL" required>
       <button type="submit">Submit</button>
       </form>
