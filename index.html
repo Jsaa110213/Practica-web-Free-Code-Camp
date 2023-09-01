@@ -49,7 +49,7 @@
     <section>
       <h2>Cat Form</h2>
       <form action="https://freecatphotoapp.com/submit-cat-photo">
-        <!-- Con el elemento "legend" agregamos una descripción o contexto para el contenido del "fieldset" informando lo que debemos ingresar -->
+
         <fieldset>
           <legend>Is your cat an indoor or outdoor cat? </legend>
           <label>
@@ -59,10 +59,11 @@
             <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">  Outdoor
           </label>
       </fieldset>
-
+        <!-- En este input, se anidó el texto "Loving" dentro de un label, como otra forma de asociar el texto al elemento input, atravez del atributo "for" con el mismo valor del "id" -->
       <fieldset>
         <legend> What's your cat's personality?</legend>
-        <input type="checkbox" id="loving"> Loving
+        <input type="checkbox" id="loving"> 
+        <label for="loving"> Loving </label>
       </fieldset>
 
       <input type="text" name="catphotourl" placeholder="cat photo URL" required>
