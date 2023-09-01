@@ -59,15 +59,14 @@
             <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">  Outdoor
           </label>
       </fieldset>
-        
+        <!-- Se agregó el atributo "value" a todos los checkbox, con el mismo valor que sus id, este atributo es opcional, pero es una buena practica incluirlo en cualquier checkbox o radio button de una página :) -->
       <fieldset>
           <legend> What's your cat's personality?</legend>
-        <input type="checkbox" id="loving" name="personality"> 
+        <input type="checkbox" id="loving" name="personality" value="loving"> 
           <label for="loving"> Loving </label>
-          <!-- Este es otro nuevo checkbox, al cual se le agregarón todos los elementos "input" y "label" y atributos "type","id","name" -->
-        <input type="checkbox" id="lazy" name="personality">
+        <input type="checkbox" id="lazy" name="personality" value="lazy">
           <label for="lazy"> Lazy </label>
-        <input type="checkbox" id="energetic" name="personality">
+        <input type="checkbox" id="energetic" name="personality" value="energetic">
           <label for="energetic"> Energetic </label>
       </fieldset>
 
