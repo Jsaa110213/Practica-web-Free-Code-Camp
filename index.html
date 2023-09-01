@@ -53,16 +53,16 @@
         <fieldset>
           <legend>Is your cat an indoor or outdoor cat? </legend>
           <label>
-            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor
+            <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor
           </label>
           <label>
             <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">  Outdoor
           </label>
       </fieldset>
-        <!-- Se agregó el atributo "value" a todos los checkbox, con el mismo valor que sus id, este atributo es opcional, pero es una buena practica incluirlo en cualquier checkbox o radio button de una página :) -->
+        <!-- Se agregó el atributo "checked" a los primeros inputs de cada pregunta y con esto (sin necesidad de agregarle un valor), se seleccioná por defecto un checkbox o radio button -->
       <fieldset>
           <legend> What's your cat's personality?</legend>
-        <input type="checkbox" id="loving" name="personality" value="loving"> 
+        <input type="checkbox" id="loving" name="personality" value="loving" checked> 
           <label for="loving"> Loving </label>
         <input type="checkbox" id="lazy" name="personality" value="lazy">
           <label for="lazy"> Lazy </label>
